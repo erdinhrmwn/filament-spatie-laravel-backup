@@ -35,6 +35,7 @@ class BackupDestinationStatusListRecords extends Component implements HasForms, 
                     ->label(__('filament-spatie-backup::backup.components.backup_destination_status_list.table.fields.disk')),
                 Tables\Columns\IconColumn::make('healthy')
                     ->label(__('filament-spatie-backup::backup.components.backup_destination_status_list.table.fields.healthy'))
+                    ->alignCenter()
                     ->boolean(),
                 Tables\Columns\TextColumn::make('amount')
                     ->label(__('filament-spatie-backup::backup.components.backup_destination_status_list.table.fields.amount')),
